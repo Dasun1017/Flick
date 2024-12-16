@@ -1,8 +1,4 @@
-<%-- 
-    Document   : revenue
-    Created on : Dec 12, 2024, 4:16:19 PM
-    Author     : ravindupriyankara
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

@@ -127,33 +127,37 @@
 <body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col" style = "overflow-x: hidden;">
 
     <!-- Navigation Bar -->
-    <header class="fixed top-0 left-0 w-full z-50 bg-gray-900 bg-opacity-90 backdrop-blur-sm shadow-lg">
+    <header id="head" class="fixed top-0 left-0 w-full z-50 bg-gray-900 bg-opacity-90 backdrop-blur-sm shadow-lg">
       <div class="container mx-auto flex justify-between items-center px-6 py-3">
         <!-- Logo -->
         <h1 class="text-3xl font-extrabold text-teal-300 tracking-wide"> 
             <!--i changed it-->
-          <a href="home.jsp"><img src="images/logo.png" id="logo"></a>
+            <!--<a href="Dashboard/home.jsp"><img src="flick 2.png"/></a>-->
+            <a href="home.jsp"><img src="images/logo.png" id="logo"></a>
+             <!--<a href="https://www.tesla.com/"><img src="logo.svg" class="i1"/></a>-->
         </h1>
 
         <!-- Navigation Menu (Desktop) -->
-        <nav class="hidden md:flex space-x-8 text-lg font-medium text-gray-300">
-          <a href="home.jsp" class="hover:text-teal-300  transition duration-300">Home</a>
-          <a href="home.jsp#about-us" class="hover:text-teal-300  transition duration-300">About Us</a>
-          <!--<a href="#upcoming-movies"" class="hover:text-teal-300  transition duration-300">Movies</a>-->
-          <a href="movies.jsp" class="hover:text-teal-300  transition duration-300">Movies</a>
-          <a href="home.jsp#faq" class="hover:text-teal-300  transition duration-300">FAQ</a>
+        <nav id="navigation" class="hidden md:flex space-x-8 text-lg font-medium text-gray-300">
+          <a href="#home" class="hover:text-teal-300 transition duration-300">Home</a>
+          <a href="home.jsp#about-us" class="hover:text-teal-300 transition duration-300">About Us</a>
+          <!--<a href="#upcoming-movies"" class="hover:text-teal-300 transition duration-300">Movies</a>-->
+          <a href="movies.jsp"" class="hover:text-teal-300 transition duration-300">Movies</a>
+          <!--<a href="movies.jsp" class="hover:text-teal-300 transition duration-300">Movies</a>-->
+          <a href="home.jsp#faq" class="hover:text-teal-300 transition duration-300">FAQ</a>
+          <a href="register.html" class="hover:text-teal-300 transition duration-300">Sign up</a>
         </nav>
 
         <!-- Profile Section -->
-        <div class="hidden md:flex items-center space-x-4">
-          <img src="resources/dashboard/home/profile.svg" alt="User Logo" class="w-10 h-10 rounded-full border-2 border-teal-300 ">
+<!--        <div class="hidden md:flex items-center space-x-4">
+          <img src="resources/dashboard/home/profile.svg" alt="User Logo" class="w-10 h-10 rounded-full border-2 border-teal-300">
           
               
           <span class="text-gray-300 font-medium">user@gmail.com</span>
           
           
-        </div>
-        
+        </div>-->
+
         <!-- Mobile Menu Button -->
         <button id="menu-toggle" class="block md:hidden text-teal-300 focus:outline-none">
           <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -295,5 +299,58 @@
             }
         %>
     </div>
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- About Section -->
+          <div>
+            <h3 class="text-teal-300 font-bold text-lg mb-4">About Us</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">
+              Welcome to SmBookings! Your ultimate destination for the latest movies and theater experiences.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-teal-300 font-bold text-lg mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="home.jsp" class="text-gray-300 hover:text-teal-300 transition">Home</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-teal-300 transition">Top Movies</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-teal-300 transition">Now Showing</a></li>
+              <li><a href="feedback/feedback.jsp" class="text-gray-300 hover:text-teal-300 transition">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-teal-300 font-bold text-lg mb-4">Contact Us</h3>
+            <p class="text-gray-300 text-sm">
+              <strong>Email:</strong> support@smbookings.com<br>
+              <strong>Phone:</strong> +123 456 7890<br>
+              <strong>Address:</strong> 123 Cinema St, Movietown, USA
+            </p>
+          </div>
+
+          <!-- Social Media -->
+          <div>
+            <h3 class="text-teal-300 font-bold text-lg mb-4">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-teal-300">
+                <img src="resources/landing/fb.svg" loading="lazy" class="w-6 h-6" alt="Fb Icon">
+              </a>
+              <a href="#" class="text-gray-400 hover:text-teal-300">
+                <img src="resources/landing/twitter.svg" loading="lazy" class="w-6 h-6" alt="Twitter Icon">
+              </a>
+              <a href="#" class="text-gray-400 hover:text-teal-300">
+                <img src="resources/landing/insta.svg" loading="lazy" class="w-6 h-6" alt="Insta Icon">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+          &copy; 2024 SmBookings. All Rights Reserved. | <a href="#" class="text-teal-300 hover:underline">Privacy Policy</a>
+        </div>
+      </footer>
 </body>
 </html>

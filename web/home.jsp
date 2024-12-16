@@ -384,7 +384,7 @@
               <li><a href="#" class="text-gray-300 hover:text-teal-300 transition">Home</a></li>
               <li><a href="#" class="text-gray-300 hover:text-teal-300 transition">Top Movies</a></li>
               <li><a href="#" class="text-gray-300 hover:text-teal-300 transition">Now Showing</a></li>
-              <li><a href="#" class="text-gray-300 hover:text-teal-300 transition">Contact Us</a></li>
+              <li><a href="feedback/feedback.jsp" class="text-gray-300 hover:text-teal-300 transition">Contact Us</a></li>
             </ul>
           </div>
 

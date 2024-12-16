@@ -1,9 +1,3 @@
-<%-- 
-    Document   : canteens
-    Created on : Dec 12, 2024, 4:10:54 PM
-    Author     : ravindupriyankara
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
